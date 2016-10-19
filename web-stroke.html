@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Written Chinese</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" id="jquery-ui-style-css" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css?ver=4.5.3" type="text/css" media="all">
+  <link rel="stylesheet" id="malihu-custom-scrollbar-style-css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.4/jquery.mCustomScrollbar.min.css?ver=4.5.3" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body class="js-page">
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <ul class="log-button-wrap pull-right">
+            <li class="cstm login"><a href="#">Log in</a></li>
+            <li class="cstm signup"><a href="#">Sign up</a></li>
+          </ul>
+
+          <!-- Enjoy block: to show delete class 'hide' -->
+          <div class="enjoy-btn-wrap pull-right hide">
+            <div class="dropdown cstm-drop pull-right">
+              <a href="#" class="dropdown-toggle">Enjoy <span class="fa fa-chevron-down"></span></a>
+              <ul class="sub-menu dropdown-menu">
+                <li><a href="#">My Study Space</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">My Shopping Cart</a></li>
+                <li><a href="#">Purchase History</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" /></a>
+            <button type="button" class="cstm white navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span>Menu</span></button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse"><ul id="menu-main-menu" class="nav navbar-nav navbar-right"><li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-22"><a href="#">Home</a></li>
+            <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="#">Start Here</a></li>
+            <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18 dropdown"><a href="#" class="dropdown-toggle">Dictionary</a>
+            <ul class="sub-menu dropdown-menu">
+            	<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="#">Web Dictionary</a></li>
+            	<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="#">Mobile Dictionary</a></li>
+            </ul>
+            </li>
+            <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17 dropdown"><a href="#" class="dropdown-toggle">Chinese Tools </a>
+            <ul class="sub-menu dropdown-menu">
+            	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#">Online Tools</a></li>
+            	<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="#">Mobile Tools</a></li>
+            	<li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="#">Phisical Stuff</a></li>
+            </ul>
+            </li>
+            <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="#">Pricing</a></li>
+            <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a href="#">Blog</a></li>
+            </ul></div>
+
+          <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Start here</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dictionary <span class="fa fa-chevron-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Web Dictionary</a></li>
+                  <li><a href="#">Mobile Dictionary</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chinese tools <span class="fa fa-chevron-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Online tools</a></li>
+                  <li><a href="#">Mobile tools</a></li>
+                  <li><a href="#">Phisical stuff</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>/.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="search-wrap">
+        <form class="form-inline">
+          <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-6 col-xs-9 custom-search">
+              <input type="text" class="form-control" id="" placeholder="Enter Pinyin, 汉子, or English">
+              <button type="button" class="cstm-close hide"><i>×</i></button>
+              <div class="button-wrap">
+                <button class="cstm-button" data-link-open="#handWrite">Handwriting</button>
+                <button class="cstm-button" data-link-open="#pinyinEditor">Pinyin editor</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-3">
+              <div class="row">
+                <div class="col-md-5 col-sm-4 col-xs-6 custom-check">
+                  <input type="radio" name="dic-post" id="dictionary">
+                  <label for="dictionary">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    Dictionary
+                  </label>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 custom-check">
+                  <input type="radio" name="dic-post" id="post">
+                  <label for="post">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    Posts
+                  </label>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12 btn-wrap">
+                  <button type="button" class="btn btn-default text-center cstm white"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="dictionary-wrap">
+          <div id='handWrite' class="dictionary-block handwriting">
+            <a href="#" class="close"><i class="fa fa-close"></i></a>
+            <div class="canvas-wrap">
+              <div class="canvas-block">
+                <canvas id="canvas_handwriting"></canvas>
+              </div>
+              <ul class="btn-wrap">
+                <li><a href="#" class="cstm white"><span>Clear</span></a></li>
+                <li><a href="#" class="cstm white"><span>Undo</span></a></li>
+              </ul>
+            </div>
+            <div class="symbol-wrap">
+              <ul class="symbol-list">
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="pinyinEditor" class="dictionary-block pinyin-editor">
+            <a href="#" class="close"><i class="fa fa-close"></i></a>
+            <p>Use this tool to add tone marks to pinyin or to convert tone number (e.g. hao3) to tone marks.</p>
+            <form class="dictionary-txt">
+              <div class="form-group">
+                <textarea rows="3" cols="85"></textarea>
+              </div>
+            </form>
+            <ul class="mark-list">
+              <li><input type="button" value="ā"></li>
+              <li><input type="button" value="á"></li>
+              <li><input type="button" value="ǎ"></li>
+              <li><input type="button" value="à"></li>
+              <li><input type="button" value="ē"></li>
+              <li><input type="button" value="é"></li>
+              <li><input type="button" value="ě"></li>
+              <li><input type="button" value="è"></li>
+              <li><input type="button" value="ī"></li>
+              <li><input type="button" value="í"></li>
+              <li><input type="button" value="ǐ"></li>
+              <li><input type="button" value="ì"></li>
+              <li><input type="button" value="ō"></li>
+              <li><input type="button" value="ó"></li>
+              <li><input type="button" value="ǒ"></li>
+              <li><input type="button" value="ò"></li>
+              <li><input type="button" value="ū"></li>
+              <li><input type="button" value="ú"></li>
+              <li><input type="button" value="ǔ"></li>
+              <li><input type="button" value="ù"></li>
+              <li><input type="button" value="ǖ"></li>
+              <li><input type="button" value="ǘ"></li>
+              <li><input type="button" value="ǚ"></li>
+              <li><input type="button" value="ǜ"></li>
+            </ul>
+            <p class="text-center">Although you can use the red buttons to add tone marks, we highly recommend you use the number method (e.g. hao3) for speed and placement of the accent above the correct vowel. [Hint: Type "v" for "ü"] <br>
+            <span>Note: You do not need to use this tool to enter pinyin in this dictionary.</span></p>
+
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div id="content" class="site-content">
+
+    <section class="wrapper">
+    	<div class="main-content clearfix">
+    		<div class="col-md-9">
+    			<div class="content-wrap single-page">
+    				<div class="stroke-wrap">
+    					<h5 class="stroke-ttl">Full List of Common Chinese Characters with 9 Strokes, <br><span>Click characters to learn more</span></h5>
+    					<div class="stroke-block">
+    						<ul class="stroke-block-list clearfix">
+    							<li><a class="active" href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    							<li><a href="#">是 shì</a></li>
+    						</ul>
+    					</div>
+    				</div>
+
+    			</div>
+
+    		</div>
+    		<div class="sidebar col-md-3 hidden-sm hidden-xs">
+          <div class="search-banner-wrap">
+        		<div class="side-banner">
+        			<h3>Written chinese dictionary</h3>
+        			<ul class="side-dwld-wrap">
+        				<li><a class="dwn-ios" href="#"></a></li>
+        				<li><a class="dwn-android" href="#"></a></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="google-wrap hidden-sm hidden-xs">
+        		<iframe src="https://docs.google.com/forms/d/1qzzD6yYkybOLQHjAvV1yIwy3yJf3hGyqy4-0Pk3Pp2s/viewform?embedded=true" width="350" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        	</div>
+        	<div class="side-library hidden-sm hidden-xs">
+        		<div class="icon-wrap">
+        			<h4 class="sect-ttl text-center">Libraries</h4>
+        			<ul class="icon-list">
+        				<li><a href="#"><i class="icon-icon1"></i></a><br><span>Flascards</span></li>
+        				<li><a href="#"><i class="icon-icon2"></i></a><br><span>Tools</span></li>
+        				<li><a href="#"><i class="icon-icon3"></i></a><br><span>Books</span></li>
+        				<li><a href="#"><i class="icon-icon4"></i></a><br><span>Podcast</span></li>
+        				<li><a href="#"><i class="icon-icon5"></i></a><br><span>Music</span></li>
+        				<li><a href="#"><i class="icon-icon6"></i></a><br><span>TV Show</span></li>
+        			</ul>
+        		</div>
+        	</div>
+        	<div class="popular-post-wrap">
+        		<h4 class="sect-ttl text-center">Most popular posts</h4>
+        		<ul class="post-list">
+        			<li><a href="#">8 Reasons Why You Should Learn Chinese</a></li>
+        			<li><a href="#">10 Chinese Songs to Learn Mandarin With</a></li>
+        			<li><a href="#">10 Chinese TV Shows to Help You Learn Mandarin</a></li>
+        			<li><a href="#">The Radical Truth: The Importance of Learning Radicals</a></li>
+        			<li><a href="#">TWCC05 – Are Chinese Men Boyfriend Material? – Episode 5</a></li>
+        			<li><a href="#">Want to know how to take an HSK test? Here are 9 Tips!</a></li>
+        			<li><a href="#">Pros and Cons of Learning Chinese with Pinyin</a></li>
+        			<li><a href="#">TWCC21 – Street Food in China: To Eat or Not to Eat?, Episode21</a></li>
+        			<li><a href="#">Fun Chinese Homophones You Can Use Online</a></li>
+        			<li><a href="#">Top 10 Most Popular Chinese Teas</a></li>
+        		</ul>
+        	</div>
+    		</div>
+    		<div class="clearfix"></div>
+    		<div class="stroke-list-layer col-md-12 hidden-sm hidden-xs">
+    			<ul class="stroke-list">
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 1 Stroke</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 2 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 3 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 4 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 5 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 6 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 7 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 8 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 9 Strokes</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    </section>
+
+  </div>
+
+
+  <footer>
+    <div class="wrapper foot-menu">
+      <div class="row flex-block">
+        <div class="col-md-2 col-sm-6">
+          <ul class="social-list visible-xs">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          </ul>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Start here</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Learning <abbr title="Frequently Asked Questions">faq</abbr></a></li>
+            <li><a href="#">Chinese tools</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 hidden-xs">
+          <h4>Written Chinese Dictionary</h4>
+          <ul>
+            <li><a href="#">Online study space</a></li>
+            <li><a href="#">Online dictionary</a></li>
+            <li><a href="#">Android dictionary</a></li>
+            <li><a href="#"><abbr title="iPhone Operating System"><span>i</span>OS</abbr> dictionary</a></li>
+            <li><a href="#"><abbr title="Android Package">apk</abbr> download</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 banner-wrap hidden-xs">
+          <img src="./images/banner_with_love.jpg" alt="" />
+        </div>
+        <div class="col-md-4 col-sm-6 hidden-xs">
+          <h4>We're everywhere you are, find us!</h4>
+          <ul class="social-list">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="row flex-block">
+            <div class="col-sm-6"><img src="./images/qr_img.jpg" alt=""></div>
+            <div class="col-sm-6 trans-logo-wrap"><img class="logo-transparent" src="./images/logo-transparent.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+			<div class="wrapper copy-inner clearfix">
+				Copyright &copy; 2009 - 2016 v1.9.1 <a href="#" target="_self" title="WrittenChinese.Com">WrittenChinese.Com</a> All Rights Reserved.
+				<span class="pull-right">This website contains the dictionary data of <a href="http://www.mdbg.net/chindict/chindict.php?page=cedict">CC-CEDICT</a>&nbsp;&nbsp;<a href="https://www.writtenchinese.com/contact/" target="_self" title="Contact Us">Contact Us</a></span>
+			</div>
+		</div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js?ver=1.10.3"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.4/jquery.mCustomScrollbar.concat.min.js?ver=3.1.4"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

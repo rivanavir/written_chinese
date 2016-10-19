@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Written Chinese</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" id="jquery-ui-style-css" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css?ver=4.5.3" type="text/css" media="all">
+  <link rel="stylesheet" id="malihu-custom-scrollbar-style-css" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.4/jquery.mCustomScrollbar.min.css?ver=4.5.3" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body class="js-page">
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <ul class="log-button-wrap pull-right">
+            <li class="cstm login"><a href="#">Log in</a></li>
+            <li class="cstm signup"><a href="#">Sign up</a></li>
+          </ul>
+
+          <!-- Enjoy block: to show delete class 'hide' -->
+          <div class="enjoy-btn-wrap pull-right hide">
+            <div class="dropdown cstm-drop pull-right">
+              <a href="#" class="dropdown-toggle">Enjoy <span class="fa fa-chevron-down"></span></a>
+              <ul class="sub-menu dropdown-menu">
+                <li><a href="#">My Study Space</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">My Shopping Cart</a></li>
+                <li><a href="#">Purchase History</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" /></a>
+            <button type="button" class="cstm white navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span>Menu</span></button>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse"><ul id="menu-main-menu" class="nav navbar-nav navbar-right"><li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-22"><a href="#">Home</a></li>
+            <li id="menu-item-19" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19"><a href="#">Start Here</a></li>
+            <li id="menu-item-18" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-18 dropdown"><a href="#" class="dropdown-toggle">Dictionary</a>
+            <ul class="sub-menu dropdown-menu">
+            	<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61"><a href="#">Web Dictionary</a></li>
+            	<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="#">Mobile Dictionary</a></li>
+            </ul>
+            </li>
+            <li id="menu-item-17" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-17 dropdown"><a href="#" class="dropdown-toggle">Chinese Tools </a>
+            <ul class="sub-menu dropdown-menu">
+            	<li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="#">Online Tools</a></li>
+            	<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="#">Mobile Tools</a></li>
+            	<li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-62"><a href="#">Phisical Stuff</a></li>
+            </ul>
+            </li>
+            <li id="menu-item-16" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16"><a href="#">Pricing</a></li>
+            <li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15"><a href="#">Blog</a></li>
+            </ul></div>
+
+          <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Start here</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dictionary <span class="fa fa-chevron-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Web Dictionary</a></li>
+                  <li><a href="#">Mobile Dictionary</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chinese tools <span class="fa fa-chevron-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Online tools</a></li>
+                  <li><a href="#">Mobile tools</a></li>
+                  <li><a href="#">Phisical stuff</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>/.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="search-wrap">
+        <form class="form-inline">
+          <div class="row">
+            <div class="col-lg-8 col-md-7 col-sm-6 col-xs-9 custom-search">
+              <input type="text" class="form-control" id="" placeholder="Enter Pinyin, 汉子, or English">
+              <button type="button" class="cstm-close hide"><i>×</i></button>
+              <div class="button-wrap">
+                <button class="cstm-button" data-link-open="#handWrite">Handwriting</button>
+                <button class="cstm-button" data-link-open="#pinyinEditor">Pinyin editor</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-6 col-xs-3">
+              <div class="row">
+                <div class="col-md-5 col-sm-4 col-xs-6 custom-check">
+                  <input type="radio" name="dic-post" id="dictionary">
+                  <label for="dictionary">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    Dictionary
+                  </label>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-6 custom-check">
+                  <input type="radio" name="dic-post" id="post">
+                  <label for="post">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    Posts
+                  </label>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12 btn-wrap">
+                  <button type="button" class="btn btn-default text-center cstm white"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="dictionary-wrap">
+          <div id='handWrite' class="dictionary-block handwriting">
+            <a href="#" class="close"><i class="fa fa-close"></i></a>
+            <div class="canvas-wrap">
+              <div class="canvas-block">
+                <canvas id="canvas_handwriting"></canvas>
+              </div>
+              <ul class="btn-wrap">
+                <li><a href="#" class="cstm white"><span>Clear</span></a></li>
+                <li><a href="#" class="cstm white"><span>Undo</span></a></li>
+              </ul>
+            </div>
+            <div class="symbol-wrap">
+              <ul class="symbol-list">
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+                <li><a href="#">是</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="pinyinEditor" class="dictionary-block pinyin-editor">
+            <a href="#" class="close"><i class="fa fa-close"></i></a>
+            <p>Use this tool to add tone marks to pinyin or to convert tone number (e.g. hao3) to tone marks.</p>
+            <form class="dictionary-txt">
+              <div class="form-group">
+                <textarea rows="3" cols="85"></textarea>
+              </div>
+            </form>
+            <ul class="mark-list">
+              <li><input type="button" value="ā"></li>
+              <li><input type="button" value="á"></li>
+              <li><input type="button" value="ǎ"></li>
+              <li><input type="button" value="à"></li>
+              <li><input type="button" value="ē"></li>
+              <li><input type="button" value="é"></li>
+              <li><input type="button" value="ě"></li>
+              <li><input type="button" value="è"></li>
+              <li><input type="button" value="ī"></li>
+              <li><input type="button" value="í"></li>
+              <li><input type="button" value="ǐ"></li>
+              <li><input type="button" value="ì"></li>
+              <li><input type="button" value="ō"></li>
+              <li><input type="button" value="ó"></li>
+              <li><input type="button" value="ǒ"></li>
+              <li><input type="button" value="ò"></li>
+              <li><input type="button" value="ū"></li>
+              <li><input type="button" value="ú"></li>
+              <li><input type="button" value="ǔ"></li>
+              <li><input type="button" value="ù"></li>
+              <li><input type="button" value="ǖ"></li>
+              <li><input type="button" value="ǘ"></li>
+              <li><input type="button" value="ǚ"></li>
+              <li><input type="button" value="ǜ"></li>
+            </ul>
+            <p class="text-center">Although you can use the red buttons to add tone marks, we highly recommend you use the number method (e.g. hao3) for speed and placement of the accent above the correct vowel. [Hint: Type "v" for "ü"] <br>
+            <span>Note: You do not need to use this tool to enter pinyin in this dictionary.</span></p>
+
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div id="content" class="site-content">
+
+    <section class="wrapper">
+    	<div class="main-content clearfix">
+        <div class="col-sm-12">
+          <div class="search-top-layer">
+            <div class="row">
+              <div class="col-sm-9">
+                <h2 class="tip-ttl">Recent Searches</h2>
+                <div class="filter-wrap">
+                  <ul class="filter-list">
+                    <li id="language"><a href="#" class="cstm transparent"><span>English</span></a></li>
+                    <li id="toggleChinese"><a href="#" class="cstm transparent"><span>See Traditional</span></a></li>
+                    <li id="togglePronunciation" data-mandarin="See Mandarin" data-cantonese="See Cantonese"><a href="#" class="cstm transparent"><span>See Cantonese</span></a></li>
+                    <li class="dropdown cstm-drop">
+                      <a href="#" class="dropdown-toggle">Tone <span class="fa fa-chevron-down"></span></a>
+                      <div class="sub-menu dropdown-menu">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td>Phonetics:</td>
+                              <td>
+                                <input id="phonetic1" checked name="phonetic" type="radio">
+                                <label for="phonetic1">ni3</label>
+                              </td>
+                              <td>
+                                <input id="phonetic2" name="phonetic" type="radio">
+                                <label for="phonetic2">nǐ</label>
+                              </td>
+                            </tr>
+                            <tr class="tone-check">
+                              <td>Tone colors (<span class="red">ā</span><span class="yellow">á</span><span class="green">ǎ</span><span class="blue">à</span><span>a</span>):</td>
+                              <td>
+                                <input id="color1" name="color" type="radio">
+                                <label for="color1">off</label>
+                              </td>
+                              <td>
+                                <input id="color2" checked name="color" type="radio">
+                                <label for="color2">on</label>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="clearfix"></div>
+                <div class="txt-layer"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, optio. Non incidunt eos, accusamus tempora molestias maxime modi, molestiae minima. Expedita eos eveniet eius asperiores nobis cum. Mollitia distinctio cumque dolores blanditiis suscipit dolorem, dolor excepturi, autem illo optio molestiae minus sequi, reiciendis architecto natus quasi dolorum quisquam dolore earum!</p></div>
+
+              </div>
+              <div class="col-sm-3 search-banner-wrap">
+                <div class="side-banner">
+                  <h3>Written chinese dictionary</h3>
+                  <ul class="side-dwld-wrap">
+                    <li><a class="dwn-ios" href="#"></a></li>
+                    <li><a class="dwn-android" href="#"></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="col-md-9">
+    			<div class="content-wrap single-page learn-more">
+            <!-- <div class="txt-layer">
+    					<div class="row">
+    						<div class="col-xs-12">
+    							<h2 class="tip-ttl">Recent Searches</h2>
+    						</div>
+    					</div>
+    					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, optio. Non incidunt eos, accusamus tempora molestias maxime modi, molestiae minima. Expedita eos eveniet eius asperiores nobis cum. Mollitia distinctio cumque dolores blanditiis suscipit dolorem, dolor excepturi, autem illo optio molestiae minus sequi, reiciendis architecto natus quasi dolorum quisquam dolore earum!</p>
+    				</div> -->
+
+		        <h2 class="tip-ttl">Learn more about <span class="symbol red">我</span></h2>
+						<ul class="breadcrumb">
+							<li><a href="#">Written Chinese</a></li>
+							<!-- <li>></li> -->
+							<li><a href="#">Dictionary</a></li>
+							<!-- <li>></li> -->
+							<li>"我" Character Details</li>
+						</ul>
+
+    				<div class="clearfix"></div>
+    				<div class="learn-more-wrap">
+    					<div class="learn-panel">
+    						<div class="row">
+    							<div class="col-sm-6">
+    								<div class="symbol-media clearfix">
+    									<!-- <a href="#" class="tbl-pls-btn cstm smpl transparent media-plus"><span>&nbsp;</span></a> -->
+                      <div class="tbl-pls-btn-wrp dropdown cstm-drop">
+                        <span class="dropdown-toggle"><a href="#" class="tbl-pls-btn cstm smpl transparent"><span>&nbsp;</span></a></span>
+                        <ul class="sub-menu dropdown-menu">
+                          <li><a href="#">Animals and Bugs</a><i class="fa fa-check"></i></li>
+                          <li><a href="#">Foods related</a></li>
+                          <li><a href="#">My Quick List</a></li>
+                          <li><a href="#">Medicine ralated</a></li>
+                          <li class="button-wrap"><a class="cstm white" href="#"><span>Create a new list</span></a></li>
+                        </ul>
+                      </div>
+    									<div class="symbol-layer">
+    										<img class="stop" src="./images/symbol-stop.gif" alt="" />
+    										<img class="play hidden" src="./images/symbol.gif" alt="" />
+    									</div>
+    									<ul class="controls">
+    										<li><a class="cstm transparent voice" href="#"><span><i class="icon-icon7"></i></span></a></li>
+    										<li><a class="cstm transparent play-stop" href="#"><span><i class="icon-icon8"></i></span></a></li>
+    									</ul>
+    								</div>
+    							</div>
+    							<div class="col-sm-6">
+    								<h4 class="panel-ttl">Radicals in this Character</h4>
+    								<ul class="pnl-smbl-list">
+    									<li><span class="pnl-smbl">氏</span> <span>sī</span> <span>silk</span> </li>
+    									<li><span class="pnl-smbl red">我</span> <span>shì</span> <span>clan</span></li>
+    								</ul>
+    							</div>
+    						</div>
+    					</div>
+              <div class="clearfix"></div>
+    					<!-- <div class="filter-wrap clearfix">
+    						<ul class="filter-list">
+                  <li id="language"><a href="#" class="cstm transparent"><span>English</span></a></li>
+                  <li id="toggleChinese"><a href="#" class="cstm transparent"><span>See Traditional</span></a></li>
+    							<li id="togglePronunciation" data-mandarin="See Mandarin" data-cantonese="See Cantonese"><a href="#" class="cstm transparent"><span>See Cantonese</span></a></li>
+    							<li class="dropdown cstm-drop">
+    								<a href="#" class="dropdown-toggle">Tone <span class="fa fa-chevron-down"></span></a>
+    								<div class="sub-menu dropdown-menu">
+    									<table class="table">
+    										<tbody>
+    											<tr>
+    												<td>Phonetics:</td>
+    												<td>
+    													<input id="phonetic1" checked name="phonetic" type="radio">
+    													<label for="phonetic1">ni3</label>
+    												</td>
+    												<td>
+    													<input id="phonetic2" name="phonetic" type="radio">
+    													<label for="phonetic2">nǐ</label>
+    												</td>
+    											</tr>
+    											<tr class="tone-check">
+    												<td>Tone colors (<span class="red">ā</span><span class="yellow">á</span><span class="green">ǎ</span><span class="blue">à</span><span>a</span>):</td>
+    												<td>
+    													<input id="color1" name="color" type="radio">
+    													<label for="color1">off</label>
+    												</td>
+    												<td>
+    													<input id="color2" checked name="color" type="radio">
+    													<label for="color2">on</label>
+    												</td>
+    											</tr>
+    										</tbody>
+    									</table>
+    								</div>
+    							</li>
+    						</ul>
+    					</div> -->
+
+              <div class="table-layer clearfix">
+    						<div class="tbl-wrapper">
+    							<table class="table cstm-table">
+    								<thead>
+    									<tr>
+    										<th class="mandarin-blk">Pinyin</th>
+    										<th class="cantonese-blk hide">Yale</th>
+    										<th class="cantonese-blk hide">Jyutping</th>
+    										<th>English Definition for Chinese Text</th>
+    									</tr>
+    								</thead>
+    								<tbody>
+    									<tr>
+    										<td class="mandarin-blk">
+                          <div class="mandarin-inner">
+                            <span class="icon-icon7"></span>
+                            <div class="link-wrap"><span class="char green"><a href="#">wǒ</a></span></div>
+                          </div>
+                        </td>
+    										<td class="cantonese-blk hide"><a href="#"><span>ngo5</span></a></td>
+    										<td class="cantonese-blk hide"><a href="#"><span>ngo5</span></a></td>
+    										<td class="txt-cell">paper / classifier for documents, letter etc</td>
+    									</tr>
+    								</tbody>
+    							</table>
+    						</div>
+
+    						<h3 class="tbl-ttl">Alternate meanings and pronunciations for this character</h3>
+
+    						<div class="tbl-wrapper">
+    							<table class="table cstm-table">
+    								<thead>
+    									<tr>
+    										<th class="mandarin-blk">Pinyin</th>
+    										<th class="cantonese-blk hide">Yale</th>
+    										<th class="cantonese-blk hide">Jyutping</th>
+    										<th>English Definition for Chinese Text</th>
+    									</tr>
+    								</thead>
+    								<tbody>
+    									<tr>
+    										<td class="mandarin-blk">
+                          <div class="mandarin-inner">
+                            <span class="icon-icon7"></span>
+                            <div class="link-wrap"><span class="char green"><a href="#">wǒ</a></span></div>
+                          </div>
+                        </td>
+    										<td class="cantonese-blk hide"><a href="#"><span>ngo5</span></a></td>
+    										<td class="cantonese-blk hide"><a href="#"><span>ngo5</span></a></td>
+    										<td class="txt-cell">paper / classifier for documents, letter etc</td>
+    									</tr>
+    								</tbody>
+    							</table>
+    						</div>
+
+    						<h3 class="tbl-ttl">Common Chinese Words Using 我</h3>
+
+    						<div class="tbl-wrapper">
+    							<table class="table cstm-table with-flex">
+    								<thead>
+    									<tr>
+    										<th>Simplified Chinese</th>
+    										<th class="mandarin-blk">Pinyin</th>
+    										<th class="cantonese-blk hide">Yale</th>
+    										<th class="cantonese-blk hide">Jyutping</th>
+    										<th>English Definition for Chinese Text</th>
+    									</tr>
+    								</thead>
+    								<tbody>
+    									<tr>
+    										<td class="smbl-cstm-wrp">
+    											<div class="flex-wrap">
+    												<div class="smbl-wrap">
+    													<span class="smbl">我</span>
+    													<span class="smbl">氏</span>
+    												</div>
+    												<a class="cstm learn-more-link hidden-xs" href="#"><span>Learn more</span></a>
+    												<!-- <a href="#" class="tbl-pls-btn cstm smpl transparent"><span>&nbsp;</span></a> -->
+                            <div class="tbl-pls-btn-wrp dropdown cstm-drop">
+    													<span class="dropdown-toggle"><a href="#" class="tbl-pls-btn cstm smpl transparent"><span>&nbsp;</span></a></span>
+    													<ul class="sub-menu dropdown-menu">
+    														<li><a href="#">Animals and Bugs</a><i class="fa fa-check"></i></li>
+    														<li><a href="#">Foods related</a></li>
+    														<li><a href="#">My Quick List</a></li>
+    														<li><a href="#">Medicine ralated</a></li>
+    														<li class="button-wrap"><a class="cstm white" href="#"><span>Create a new list</span></a></li>
+    													</ul>
+    												</div>
+    												<a class="cstm learn-more-link visible-xs" href="#"><span>Learn more</span></a>
+    											</div>
+    										</td>
+    										<td class="with-icon mandarin-blk">
+                          <div class="mandarin-inner">
+                            <span class="icon-icon7"></span>
+                            <div class="link-wrap"><a href="#"><span class="char">wǒ</span></a><a href="#"><span class="char">man</span></a></div>
+                          </div>
+                        </td>
+    										<td class="cantonese-blk hide"><a href="#"><span>ngo5</span></a> <span><a href="#">si6</a>, <a href="#">ji1</a></span></td>
+    										<td class="cantonese-blk hide"><a href="#"><span>ngo5</span></a> <span><a href="#">si6</a>, <a href="#">zi1</a></span></td>
+    										<td class="txt-cell">letter / symbol / character / word / courtesy or style name traditionally given to males aged 20 in dynastic China</td>
+    									</tr>
+    									<tr>
+    										<td class="smbl-cstm-wrp">
+    											<div class="flex-wrap">
+    												<div class="smbl-wrap">
+    													<span class="smbl">我</span>
+    													<span class="smbl">氏</span>
+    												</div>
+    												<a class="cstm learn-more-link hidden-xs" href="#"><span>Learn more</span></a>
+    												<!-- <a href="#" class="tbl-pls-btn cstm smpl transparent"><span>&nbsp;</span></a> -->
+                            <div class="tbl-pls-btn-wrp dropdown cstm-drop">
+    													<span class="dropdown-toggle"><a href="#" class="tbl-pls-btn cstm smpl transparent"><span>&nbsp;</span></a></span>
+    													<ul class="sub-menu dropdown-menu">
+    														<li><a href="#">Animals and Bugs</a><i class="fa fa-check"></i></li>
+    														<li><a href="#">Foods related</a></li>
+    														<li><a href="#">My Quick List</a></li>
+    														<li><a href="#">Medicine ralated</a></li>
+    														<li class="button-wrap"><a class="cstm white" href="#"><span>Create a new list</span></a></li>
+    													</ul>
+    												</div>
+    												<a class="cstm learn-more-link visible-xs" href="#"><span>Learn more</span></a>
+    											</div>
+    										</td>
+    										<td class="with-icon mandarin-blk">
+                          <div class="mandarin-inner">
+                            <span class="icon-icon7"></span>
+                            <div class="link-wrap">
+                              <a href="#"><span class="char">wǒ</span></a>
+                              <a href="#"><span class="char">man</span></a>
+                            </div>
+                          </div>
+                        </td>
+    										<td class="cantonese-blk hide"><a href="#">gam1</a>  <a href="#">tin1</a></td>
+    										<td class="cantonese-blk hide"><a href="#">gam1</a>  <a href="#">tin1</a></td>
+    										<td class="txt-cell">letter / symbol / character / word / courtesy or style name traditionally given to males aged 20 in dynastic China</td>
+    									</tr>
+    									<tr>
+    										<td class="smbl-cstm-wrp">
+    											<div class="flex-wrap">
+    												<div class="smbl-wrap">
+    													<span class="smbl">我</span>
+    													<span class="smbl">氏</span>
+    												</div>
+    												<a class="cstm learn-more-link hidden-xs" href="#"><span>Learn more</span></a>
+    												<!-- <a href="#" class="tbl-pls-btn cstm smpl transparent"><span>&nbsp;</span></a> -->
+                            <div class="tbl-pls-btn-wrp dropdown cstm-drop">
+    													<span class="dropdown-toggle"><a href="#" class="tbl-pls-btn cstm smpl transparent"><span>&nbsp;</span></a></span>
+    													<ul class="sub-menu dropdown-menu">
+    														<li><a href="#">Animals and Bugs</a><i class="fa fa-check"></i></li>
+    														<li><a href="#">Foods related</a></li>
+    														<li><a href="#">My Quick List</a></li>
+    														<li><a href="#">Medicine ralated</a></li>
+    														<li class="button-wrap"><a class="cstm white" href="#"><span>Create a new list</span></a></li>
+    													</ul>
+    												</div>
+    												<a class="cstm learn-more-link visible-xs" href="#"><span>Learn more</span></a>
+    											</div>
+    										</td>
+    										<td class="with-icon mandarin-blk">
+                          <div class="mandarin-inner">
+                            <span class="icon-icon7"></span>
+                            <div class="link-wrap">
+                              <a href="#"><span class="char">wǒ</span></a>
+                              <a href="#"><span class="char">man</span></a>
+                            </div>
+                          </div>
+                        </td>
+    										<td class="cantonese-blk hide"><a href="#">gam1</a>  <a href="#">tin1</a></td>
+    										<td class="cantonese-blk hide"><a href="#">gam1</a> <a href="#">tin1</a></td>
+    										<td class="txt-cell">letter / symbol / character / word / courtesy or style name traditionally given to males aged 20 in dynastic China</td>
+    									</tr>
+    								</tbody>
+    							</table>
+    						</div>
+
+    						<div class="row bottom-txt">
+    							<div class="col-md-10 col-md-offset-1">
+    								<h4>How do you remember <span class="symbol red">我</span> ?</h4>
+    								<p>Post your photos, example sentences and daily homework here to share with the Chinese learning community.</p>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div id="comments" class="hidden-xs hidden-sm">
+
+    				<div id="disqus_thread"><iframe id="dsq-app2" name="dsq-app2" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/embed/comments/?base=default&amp;version=abfa4959dc34e1f6ae72ea1155d08c72&amp;f=writtenchinese&amp;t_i=152%20http%3A%2F%2Fwrittenchinese.com%2F%3Fpage_id%3D152&amp;t_u=https%3A%2F%2Fwww.writtenchinese.com%2Fchinesetools%2F&amp;t_e=Chinese%20Tools&amp;t_d=Chinese%20Tools%20Written%20Chinese&amp;t_t=Chinese%20Tools&amp;s_o=default&amp;l=" horizontalscrolling="no" verticalscrolling="no" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 752px !important;"></iframe></div>
+
+    				<script type="text/javascript">
+    				var disqus_url = 'https://www.writtenchinese.com/chinesetools/';
+    				var disqus_identifier = '152 http://writtenchinese.com/?page_id=152';
+    				var disqus_container_id = 'disqus_thread';
+    				var disqus_shortname = 'writtenchinese';
+    				var disqus_title = "Chinese Tools";
+    				var disqus_config_custom = window.disqus_config;
+    				var disqus_config = function () {
+    				    /*
+    				    All currently supported events:
+    				    onReady: fires when everything is ready,
+    				    onNewComment: fires when a new comment is posted,
+    				    onIdentify: fires when user is authenticated
+    				    */
+
+
+    				    this.language = '';
+    				        this.callbacks.onReady.push(function () {
+
+    				        // sync comments in the background so we don't block the page
+    				        var script = document.createElement('script');
+    				        script.async = true;
+    				        script.src = '?cf_action=sync_comments&post_id=152';
+
+    				        var firstScript = document.getElementsByTagName('script')[0];
+    				        firstScript.parentNode.insertBefore(script, firstScript);
+    				    });
+
+    				    if (disqus_config_custom) {
+    				        disqus_config_custom.call(this);
+    				    }
+    				};
+
+    				(function() {
+    				    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    				    dsq.async = true;
+    				    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    				    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    				})();
+    				</script>
+
+    			</div>
+    		</div>
+    		<div class="sidebar col-md-3 hidden-sm hidden-xs">
+          <div class="search-side-wrap">
+            <div class="banner-wrap">
+        			<img src="./images/sidebar-banner.jpg" alt="" />
+        			<p>Images created by That's Mandarin</p>
+        		</div>
+    				<div class="measure-word">
+    					<h5 class="side-ttl">Measure Words for <span class="symbol">我</span></h5>
+    					<div class="table-wrap">
+    						<table class="table table-measure">
+    							<thead>
+    								<tr>
+    									<th>Simplified</th>
+    									<th>Pinyin</th>
+    									<th>Used for</th>
+    								</tr>
+    							</thead>
+    							<tbody>
+    								<tr>
+    									<td><span class="symbol red">我</span></td>
+    									<td>zhang1</td>
+    									<td>@sheets (of paper); faces; flat objects</td>
+    								</tr>
+    								<tr>
+    									<td><span class="symbol red">我</span></td>
+    									<td>zhang1</td>
+    									<td>@sheets (of paper); faces; flat objects</td>
+    								</tr>
+    							</tbody>
+    						</table>
+    					</div>
+    				</div>
+            <div class="how-to-use">
+        			<h5 class="side-ttl">How to use <span class="symbol">我</span> in a Sentence</h5>
+        			<div class="symbol-block">
+        				<ul class="symbol-list">
+        					<li><a href="#"><font class="green">他</font><span>tā</span></a></li>
+        					<li><a href="#"><font class="red">昨</font><span>zuó</span></a></li>
+        					<li><a href="#"><font class="blue">晚</font><span>wǎn</span></a></li>
+        					<li><a href="#"><font class="smpl">玩</font><span>wán</span></a></li>
+        					<li><a href="#"><font class="blue">牌</font><span>zhǐ</span></a></li>
+        					<li><a href="#"><font class="red">得</font><span>pái</span></a></li>
+        					<li><a href="#"><font class="green">精</font><span>shū</span></a></li>
+        					<li><a href="#"><font class="red">光</font><span>dé</span></a></li>
+        					<li><a href="#"><font class="red">玩</font><span>jīng</span></a></li>
+        					<li><a href="#"><font class="smpl">牌</font><span>guāng</span></a></li>
+        				</ul>
+        				<p>He was taken to the cleaners in a card game last night.</p>
+        			</div>
+        			<div class="symbol-block">
+        				<ul class="symbol-list">
+        					<li><a href="#"><font class="green">他</font><span>tā</span></a></li>
+        					<li><a href="#"><font class="red">昨</font><span>zuó</span></a></li>
+        					<li><a href="#"><font class="blue">晚</font><span>wǎn</span></a></li>
+        					<li><a href="#"><font class="smpl">玩</font><span>wán</span></a></li>
+        					<li><a href="#"><font class="blue">牌</font><span>zhǐ</span></a></li>
+        					<li><a href="#"><font class="red">得</font><span>pái</span></a></li>
+        					<li><a href="#"><font class="green">精</font><span>shū</span></a></li>
+        					<li><a href="#"><font class="red">光</font><span>dé</span></a></li>
+        					<li><a href="#"><font class="red">玩</font><span>jīng</span></a></li>
+        					<li><a href="#"><font class="smpl">牌</font><span>guāng</span></a></li>
+        				</ul>
+        				<p>He was taken to the cleaners in a card game last night.</p>
+        			</div>
+        			<div class="symbol-block">
+        				<ul class="symbol-list">
+        					<li><a href="#"><font class="green">他</font><span>tā</span></a></li>
+        					<li><a href="#"><font class="red">昨</font><span>zuó</span></a></li>
+        					<li><a href="#"><font class="blue">晚</font><span>wǎn</span></a></li>
+        					<li><a href="#"><font class="smpl">玩</font><span>wán</span></a></li>
+        					<li><a href="#"><font class="blue">牌</font><span>zhǐ</span></a></li>
+        					<li><a href="#"><font class="red">得</font><span>pái</span></a></li>
+        					<li><a href="#"><font class="green">精</font><span>shū</span></a></li>
+        					<li><a href="#"><font class="red">光</font><span>dé</span></a></li>
+        					<li><a href="#"><font class="red">玩</font><span>jīng</span></a></li>
+        					<li><a href="#"><font class="smpl">牌</font><span>guāng</span></a></li>
+        				</ul>
+        				<p>He was taken to the cleaners in a card game last night.</p>
+        			</div>
+        			<div class="symbol-block">
+        				<ul class="symbol-list">
+        					<li><a href="#"><font class="green">他</font><span>tā</span></a></li>
+        					<li><a href="#"><font class="red">昨</font><span>zuó</span></a></li>
+        					<li><a href="#"><font class="blue">晚</font><span>wǎn</span></a></li>
+        					<li><a href="#"><font class="smpl">玩</font><span>wán</span></a></li>
+        					<li><a href="#"><font class="blue">牌</font><span>zhǐ</span></a></li>
+        					<li><a href="#"><font class="red">得</font><span>pái</span></a></li>
+        					<li><a href="#"><font class="green">精</font><span>shū</span></a></li>
+        					<li><a href="#"><font class="red">光</font><span>dé</span></a></li>
+        					<li><a href="#"><font class="red">玩</font><span>jīng</span></a></li>
+        					<li><a href="#"><font class="smpl">牌</font><span>guāng</span></a></li>
+        				</ul>
+        				<p>He was taken to the cleaners in a card game last night.</p>
+        			</div>
+        			<div class="symbol-block">
+        				<ul class="symbol-list">
+        					<li><a href="#"><font class="green">他</font><span>tā</span></a></li>
+        					<li><a href="#"><font class="red">昨</font><span>zuó</span></a></li>
+        					<li><a href="#"><font class="blue">晚</font><span>wǎn</span></a></li>
+        					<li><a href="#"><font class="smpl">玩</font><span>wán</span></a></li>
+        					<li><a href="#"><font class="blue">牌</font><span>zhǐ</span></a></li>
+        					<li><a href="#"><font class="red">得</font><span>pái</span></a></li>
+        					<li><a href="#"><font class="green">精</font><span>shū</span></a></li>
+        					<li><a href="#"><font class="red">光</font><span>dé</span></a></li>
+        					<li><a href="#"><font class="red">玩</font><span>jīng</span></a></li>
+        					<li><a href="#"><font class="smpl">牌</font><span>guāng</span></a></li>
+        				</ul>
+        				<p>He was taken to the cleaners in a card game last night.</p>
+        			</div>
+        			<div class="symbol-block">
+        				<ul class="symbol-list">
+        					<li><a href="#"><font class="green">他</font><span>tā</span></a></li>
+        					<li><a href="#"><font class="red">昨</font><span>zuó</span></a></li>
+        					<li><a href="#"><font class="blue">晚</font><span>wǎn</span></a></li>
+        					<li><a href="#"><font class="smpl">玩</font><span>wán</span></a></li>
+        					<li><a href="#"><font class="blue">牌</font><span>zhǐ</span></a></li>
+        					<li><a href="#"><font class="smpl">玩</font><span>wán</span></a></li>
+        					<li><a href="#"><font class="red">得</font><span>pái</span></a></li>
+        					<li><a href="#"><font class="green">精</font><span>shū</span></a></li>
+        					<li><a href="#"><font class="red">光</font><span>dé</span></a></li>
+        					<li><a href="#"><font class="green">精</font><span>shū</span></a></li>
+        					<li><a href="#"><font class="red">玩</font><span>jīng</span></a></li>
+        					<li><a href="#"><font class="green">精</font><span>shū</span></a></li>
+        					<li><a href="#"><font class="smpl">牌</font><span>guāng</span></a></li>
+        				</ul>
+        				<p>He was taken to the cleaners in a card game last night.</p>
+        			</div>
+        		</div>
+    			</div>
+    		</div>
+    		<div class="clearfix"></div>
+    		<div class="stroke-list-layer col-md-12 hidden-sm hidden-xs">
+    			<ul class="stroke-list">
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 1 Stroke</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 2 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 3 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 4 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 5 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 6 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 7 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 8 Strokes</a></li>
+    				<li><a href="http://localhost/cheinese/web-stroke/">Chinese Characters with 9 Strokes</a></li>
+    			</ul>
+    		</div>
+    	</div>
+    </section>
+
+  </div>
+
+
+  <footer>
+    <div class="wrapper foot-menu">
+      <div class="row flex-block">
+        <div class="col-md-2 col-sm-6">
+          <ul class="social-list visible-xs">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          </ul>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Start here</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Learning <abbr title="Frequently Asked Questions">faq</abbr></a></li>
+            <li><a href="#">Chinese tools</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 hidden-xs">
+          <h4>Written Chinese Dictionary</h4>
+          <ul>
+            <li><a href="#">Online study space</a></li>
+            <li><a href="#">Online dictionary</a></li>
+            <li><a href="#">Android dictionary</a></li>
+            <li><a href="#"><abbr title="iPhone Operating System"><span>i</span>OS</abbr> dictionary</a></li>
+            <li><a href="#"><abbr title="Android Package">apk</abbr> download</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 banner-wrap hidden-xs">
+          <img src="./images/banner_with_love.jpg" alt="" />
+        </div>
+        <div class="col-md-4 col-sm-6 hidden-xs">
+          <h4>We're everywhere you are, find us!</h4>
+          <ul class="social-list">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="row flex-block">
+            <div class="col-sm-6"><img src="./images/qr_img.jpg" alt=""></div>
+            <div class="col-sm-6 trans-logo-wrap"><img class="logo-transparent" src="./images/logo-transparent.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+			<div class="wrapper copy-inner clearfix">
+				Copyright &copy; 2009 - 2016 v1.9.1 <a href="#" target="_self" title="WrittenChinese.Com">WrittenChinese.Com</a> All Rights Reserved.
+				<span class="pull-right">This website contains the dictionary data of <a href="http://www.mdbg.net/chindict/chindict.php?page=cedict">CC-CEDICT</a>&nbsp;&nbsp;<a href="https://www.writtenchinese.com/contact/" target="_self" title="Contact Us">Contact Us</a></span>
+			</div>
+		</div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js?ver=1.10.3"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.4/jquery.mCustomScrollbar.concat.min.js?ver=3.1.4"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

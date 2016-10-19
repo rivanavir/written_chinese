@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Written Chinese</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="./css/style.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <div class="wrap-content">
+    <div class="wrapper">
+      <header>
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <ul class="log-button-wrap pull-right">
+              <li class="cstm login"><a href="#">Log in</a></li>
+              <li class="cstm signup"><a href="#">Sign up</a></li>
+            </ul>
+
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" /></a>
+              <button type="button" class="cstm white navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span>Menu</span></button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Start here</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dictionary <span class="fa fa-chevron-down"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Online tools</a></li>
+                    <li><a href="#">Mobile tools</a></li>
+                    <li><a href="#">Phisical stuff</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chinese tools <span class="fa fa-chevron-down"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Online tools</a></li>
+                    <li><a href="#">Mobile tools</a></li>
+                    <li><a href="#">Phisical stuff</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <!-- <li class="cstm login"><a href="#">Log in</a></li>
+                <li class="cstm signup"><a href="#">Sign up</a></li> -->
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <div class="search-wrap">
+          <form class="form-inline">
+            <div class="row">
+              <div class="col-lg-8 col-md-7 col-sm-6 col-xs-9 custom-search">
+                <input type="text" class="form-control" id="" placeholder="Enter Pinyin, 汉子, or English">
+                <button type="button" class="cstm-close hide"><i>×</i></button>
+                <div class="button-wrap">
+                  <!-- <button class="cstm-button">Handwriting</button><button class="cstm-button">Pinyin editor</button> -->
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-5 col-sm-6 col-xs-3">
+                <div class="row">
+                  <div class="col-md-5 col-sm-4 col-xs-6 custom-check">
+                    <input type="radio" name="dic-post" id="dictionary">
+                    <label for="dictionary">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      Dictionary
+                    </label>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-6 custom-check">
+                    <input type="radio" name="dic-post" id="post">
+                    <label for="post">
+                      <i class="fa fa-check" aria-hidden="true"></i>
+                      Posts
+                    </label>
+                  </div>
+                  <div class="col-md-3 col-sm-4 col-xs-12 btn-wrap">
+                    <button type="button" class="btn btn-default text-center cstm white"><span><i class="fa fa-search" aria-hidden="true"></i></span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </header>
+    </div>
+
+    <section class="wrapper">
+      <div class="main-content clearfix">
+        <div class="col-md-9">
+          <div class="content-wrap">
+            <ul id="myTabs" class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="">
+                <a href="#latest_post" id="" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Latest Posts</a>
+                <span class="fa fa-chevron-down"></span>
+              </li>
+              <li role="presentation" class="active">
+                <a href="#learner_tip" role="tab" id="" data-toggle="tab" aria-controls="profile" aria-expanded="false">Learner Tips</a>
+                <span class="fa fa-chevron-down"></span>
+              </li>
+              <li role="presentation" class="">
+                <a href="#culture_lesson" role="tab" id="" data-toggle="tab" aria-controls="profile" aria-expanded="false">Culture Lessons</a>
+                <span class="fa fa-chevron-down"></span>
+              </li>
+              <li role="presentation" class="">
+                <a href="#vocabulary" role="tab" id="" data-toggle="tab" aria-controls="profile" aria-expanded="false">Vocabulary</a>
+                <span class="fa fa-chevron-down"></span>
+              </li>
+            </ul>
+            <div id="" class="tab-content">
+              <div role="tabpanel" class="tab-pane fade" id="latest_post" aria-labelledby="home-tab">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+              </div>
+              <div role="tabpanel" class="tab-pane fade active in" id="learner_tip" aria-labelledby="profile-tab">
+                <div class="tip-block">
+                  <h2 class="tip-ttl">Past, Present and Future Tenses in Mandarin Chinese</h2>
+                  <ul class="sub-info">
+                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> On May 27, 2016</li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i> By <a href="#">Hollie</a></li>
+                    <li><i class="fa fa-sort-amount-desc fa-cstm" aria-hidden="true"></i> In Blog, <a href="#">Learner Tips</a></li>
+                  </ul>
+                  <div class="banner-layer">
+                    <img src="./images/banner.jpg" alt="" />
+                  </div>
+                  <p>It will only take to read this post! If you don’t have time to read this post now, you can get the Tenses in Mandarin Chinese Lesson as a PDF and read it later! Unlike in English, the form of a Chinese verb never changes, regardless of whether it is present, past or future tense…. <a href="#">READ MORE</a></p>
+                </div>
+                <div class="tip-block">
+                  <h2 class="tip-ttl">Past, Present and Future Tenses in Mandarin Chinese</h2>
+                  <ul class="sub-info">
+                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> On May 27, 2016</li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i> By <a href="#">Hollie</a></li>
+                    <li><i class="fa fa-sort-amount-desc fa-cstm" aria-hidden="true"></i> In Blog, <a href="#">Learner Tips</a></li>
+                  </ul>
+                  <div class="banner-layer">
+                    <img src="./images/banner.jpg" alt="" />
+                  </div>
+                  <p>It will only take to read this post! If you don’t have time to read this post now, you can get the Tenses in Mandarin Chinese Lesson as a PDF and read it later! Unlike in English, the form of a Chinese verb never changes, regardless of whether it is present, past or future tense…. <a href="#">READ MORE</a></p>
+                </div>
+                <div class="tip-block">
+                  <h2 class="tip-ttl">Past, Present and Future Tenses in Mandarin Chinese</h2>
+                  <ul class="sub-info">
+                    <li><i class="fa fa-clock-o" aria-hidden="true"></i> On May 27, 2016</li>
+                    <li><i class="fa fa-user" aria-hidden="true"></i> By <a href="#">Hollie</a></li>
+                    <li><i class="fa fa-sort-amount-desc fa-cstm" aria-hidden="true"></i> In Blog, <a href="#">Learner Tips</a></li>
+                  </ul>
+                  <div class="banner-layer">
+                    <img src="./images/banner.jpg" alt="" />
+                  </div>
+                  <p>It will only take to read this post! If you don’t have time to read this post now, you can get the Tenses in Mandarin Chinese Lesson as a PDF and read it later! Unlike in English, the form of a Chinese verb never changes, regardless of whether it is present, past or future tense…. <a href="#">READ MORE</a></p>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="culture_lesson" aria-labelledby="dropdown1-tab">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="vocabulary" aria-labelledby="dropdown2-tab">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+              </div>
+            </div>
+            <div class="pagination-wrap">
+              <nav>
+                <ul class="pager">
+                  <li class="previous"><a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i> Prev Page</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li class="next"><a href="#">Next Page <i class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="sidebar col-md-3">
+          <div class="side-banner hidden-sm hidden-xs">
+            <h3>Written chinese dictionary</h3>
+            <div class="row">
+              <div class="col-sm-7 text-center">
+                <p>Flashcards, storybooks, OCR, and tons more.</p>
+              </div>
+            </div>
+            <ul class="side-dwld-wrap">
+              <li><a class="dwn-ios" href="#"></a></li>
+              <li><a class="dwn-android" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="google-wrap hidden-sm hidden-xs">
+            <iframe src="https://docs.google.com/forms/d/1qzzD6yYkybOLQHjAvV1yIwy3yJf3hGyqy4-0Pk3Pp2s/viewform?embedded=true" width="350" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+          <div class="side-library hidden-sm hidden-xs">
+            <div class="icon-wrap">
+              <h4 class="sect-ttl text-center">Libraries</h4>
+              <ul class="icon-list">
+                <li><a href="#"><i class="icon-icon1"></i></a><br><span>Flascards</span></li>
+                <li><a href="#"><i class="icon-icon2"></i></a><br><span>Tools</span></li>
+                <li><a href="#"><i class="icon-icon3"></i></a><br><span>Books</span></li>
+                <li><a href="#"><i class="icon-icon4"></i></a><br><span>Podcast</span></li>
+                <li><a href="#"><i class="icon-icon5"></i></a><br><span>Music</span></li>
+                <li><a href="#"><i class="icon-icon6"></i></a><br><span>TV Show</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="popular-post-wrap">
+            <h4 class="sect-ttl text-center">Most popular posts</h4>
+            <ul class="post-list">
+              <li><a href="#">8 Reasons Why You Should Learn Chinese</a></li>
+              <li><a href="#">10 Chinese Songs to Learn Mandarin With</a></li>
+              <li><a href="#">10 Chinese TV Shows to Help You Learn Mandarin</a></li>
+              <li><a href="#">The Radical Truth: The Importance of Learning Radicals</a></li>
+              <li><a href="#">TWCC05 – Are Chinese Men Boyfriend Material? – Episode 5</a></li>
+              <li><a href="#">Want to know how to take an HSK test? Here are 9 Tips!</a></li>
+              <li><a href="#">Pros and Cons of Learning Chinese with Pinyin</a></li>
+              <li><a href="#">TWCC21 – Street Food in China: To Eat or Not to Eat?, Episode21</a></li>
+              <li><a href="#">Fun Chinese Homophones You Can Use Online</a></li>
+              <li><a href="#">Top 10 Most Popular Chinese Teas</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="wrapper foot-menu">
+      <div class="row flex-block">
+        <div class="col-md-2 col-sm-6">
+          <ul class="social-list visible-xs">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          </ul>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Start here</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Learning <abbr title="Frequently Asked Questions">faq</abbr></a></li>
+            <li><a href="#">Chinese tools</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 hidden-xs">
+          <h4>Written Chinese Dictionary</h4>
+          <ul>
+            <li><a href="#">Online study space</a></li>
+            <li><a href="#">Online dictionary</a></li>
+            <li><a href="#">Android dictionary</a></li>
+            <li><a href="#"><abbr title="iPhone Operating System"><span>i</span>OS</abbr> dictionary</a></li>
+            <li><a href="#"><abbr title="Android Package">apk</abbr> download</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 banner-wrap hidden-xs">
+          <img src="./images/banner_with_love.jpg" alt="" />
+        </div>
+        <div class="col-md-4 col-sm-6 hidden-xs">
+          <h4>We're everywhere you are, find us!</h4>
+          <ul class="social-list">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          </ul>
+          <div class="row flex-block">
+            <div class="col-sm-6"><img src="./images/qr_img.jpg" alt=""></div>
+            <div class="col-sm-6 trans-logo-wrap"><img class="logo-transparent" src="./images/logo-transparent.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+			<div class="wrapper copy-inner clearfix">
+				Copyright &copy; 2009 - 2016 v1.9.1 <a href="#" target="_self" title="WrittenChinese.Com">WrittenChinese.Com</a> All Rights Reserved.
+				<span class="pull-right">This website contains the dictionary data of <a href="http://www.mdbg.net/chindict/chindict.php?page=cedict">CC-CEDICT</a>&nbsp;&nbsp;<a href="https://www.writtenchinese.com/contact/" target="_self" title="Contact Us">Contact Us</a></span>
+			</div>
+		</div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
